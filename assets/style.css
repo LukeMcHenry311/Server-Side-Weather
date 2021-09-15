@@ -1,3 +1,8 @@
+body {
+    background-image: url(../cracked.png);
+    background-repeat: no-repeat;
+}
+
 .weather-container {
     background-color: azure;
     text-align: center;
@@ -10,4 +15,15 @@
     font-size: 60px;
     margin: 0;
     font-weight: bold;
+}
+
+ion-icon {
+    color: azure;
+    --ionicon-stroke-width: 80px;
+}
+
+.button-style {
+    width: 15px;
+    height: 15px;
+    background-color: pink;
 }
