@@ -1,4 +1,5 @@
 const key = '3bba06bcab2a36ab90dba65ed716c223'
+var cities = [];
 
 var button = document.querySelector('.button')
 var inputValue = document.querySelector('.inputValue')
@@ -20,22 +21,32 @@ button.addEventListener('click', function() {
     temp.innerHTML = tempValue;
     desc.innerHTML = descValue;
 
-    function setStorage() {
-        localStorage.setItem('nameofcity', nameValue);
-    }
-    setStorage()
+    function storeCities() {
+        // stringify and set key to array for value
+        localStorage.setItem("nameValue", JSON.stringify(cities));
+        console.log(localStorage);
+    };
 
-    function getValue() {
-        return localStorage.getItem('nameofcity');
-    }
-    console.log(getValue());
 
-    function myFunction() {
-        document.getElementById("demo").innerHTML = 'hiiiii'
-    }
-    myFunction();
-})
 
-    
+    // function setStorage() {
+    //     localStorage.setItem('', nameValue);
+    // }
+    // setStorage()
 
-})
+    // function getValue() {
+    //     return localStorage.getItem('nameofcity');
+    // }
+    // console.log(getValue());
+
+    // function myFunction() {
+    //     document.getElementById("demo").innerHTML = '1. ' + localStorage.getItem('nameofcity');
+    // }
+    // myFunction();
+    storeCities();
+});
+});
+
+// function storeCities() {
+//     localStorage.setItem("cities", JSON.)
+// }
