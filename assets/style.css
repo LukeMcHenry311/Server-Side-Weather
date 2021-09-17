@@ -1,29 +1,74 @@
 body {
-    background-image: url(../cracked.png);
-    background-repeat: no-repeat;
+    background-color: hotpink;
+    font-family: 'Cyber', sans-serif;
 }
 
-.weather-container {
-    background-color: azure;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input {
     text-align: center;
+    margin: 100px 0;
 }
-.weather {
-    font-size: 22px;
-    margin: 0;
-}
-.temp {
-    font-size: 60px;
-    margin: 0;
+
+input[type="text"] {
+    height: 50px;
+    width: 600px;
+    background: #e7e7e7;
+    font-family: "cyber", sans-serif;
     font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 10px;
 }
 
-ion-icon {
-    color: azure;
-    --ionicon-stroke-width: 80px;
+input[type="submit"] {
+    height: 50px;
+    width: 100px;
+    background: #e7e7e7;
+    font-family: "cyber", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 2px;
 }
 
-.button-style {
-    width: 15px;
-    height: 15px;
-    background-color: pink;
+.display {
+    text-align: center;
+    background: white;
+    height: 180px;
+    width: 750px;
+    margin-bottom: 75px;
+}
+
+/* .container {
+    display: row;
+    flex-direction: column;
+    justify-content: space-around;
+} */
+
+.recent-search {
+    background: white;
+    width: 300px;
+    height: 180px;
+    margin-left: 50px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.flex-container-two {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    text-align: center;
 }

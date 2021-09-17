@@ -5,12 +5,12 @@
     <!-- meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- css link -->
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
-    <div class="container">
-
         <!-- jumbotron -->
         <div class=" jumbotron-fluid bg-dark text-white text-center">
             <div>
@@ -18,56 +18,78 @@
             </div>
         </div>
 
-        <!-- row 1 -->
-        <div class="row">
-            <!-- col 1 - row 1 -->
-            <div class="col-4">
-                <h3>Search for a City:</h3>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" id="city-input">
-                    <div class="input-group-append">
-                        <button type="button" class="button-style"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- col 2 -->
-            <div class="col-8">
-                <!-- row 1 col 2 -->
-                <div class="row"></div>
-                <div class="row-12">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3>City:</h3>
-                            <p>1</p>
-                            <p>1</p>
-                            <p>1</p>
-                            <p>1</p>
-                        </div>
-                    </div>
-                </div>
-                <div></div>
-                <!-- row 1 col 2 -->
-                <div class="row"></div>
+        <div class="input">
+            <input type="text" class="inputValue" placeholder="Enter a City">
+            <input type="submit" value="Submit" class="button">
+        </div>
+
+        <div class="flex-container">
+
+        <div class="recent-search">
+            <p class="demo"></p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+        </div>
+
+        <div class="display">
+            <h1 class="">
+                <p class="weewoo"></p>
+                <p class="desc"></p>
+                <p class="temp"></p>
+            </h1>
+        </div>
+
+        </div>
+
+    <div class="flex-container-two">
+        <div class="card" style="width: 16rem;">
+            <div class="card-body">
+                <h5 class="card-title">Day 1</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
         </div>
 
-    </div>
+        <div class="card" style="width: 16rem;">
+            <div class="card-body">
+                <h5 class="card-title">Day 2</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
 
+        <div class="card" style="width: 16rem;">
+            <div class="card-body">
+                <h5 class="card-title">Day 3</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
 
+        <div class="card" style="width: 16rem;">
+            <div class="card-body">
+                <h5 class="card-title">Day 4</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
 
-    <!-- not using this code right now -->
+        <div class="card" style="width: 16rem;">
+            <div class="card-body">
+                <h5 class="card-title">Day 5</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card Subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
 
-    <!-- <div class="weather-container">
-        <img class="icon">
-        <p class="weather"></p>
-        <p class="temp"></p>
-    </div> -->
+    
+        
 
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- javascript -->
     <script charset="utf-8" src="./assets/index.js"></script>
-    <!-- bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </body>
 </html>

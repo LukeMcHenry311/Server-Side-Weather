@@ -1,21 +1,41 @@
-// https://www.youtube.com/watch?v=ecT42O6I_WI - referenced this youtube video when i got stuck
-//  https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
-// 3bba06bcab2a36ab90dba65ed716c223
+const key = '3bba06bcab2a36ab90dba65ed716c223'
 
-$.getJSON(
-    "https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&&appid=3bba06bcab2a36ab90dba65ed716c223", 
-function(data) {
+var button = document.querySelector('.button')
+var inputValue = document.querySelector('.inputValue')
+// var weewoo would be var name, i kept getting a 'deprecated' error whenever on line 19 so i just changed it to a random name to see if it would work and it did.
+var weewoo = document.querySelector(".weewoo");
+var desc = document.querySelector(".desc");
+var temp = document.querySelector(".temp");
+
+button.addEventListener('click', function() {
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" +inputValue.value+ "&appid=3bba06bcab2a36ab90dba65ed716c223")
+.then(response => response.json())
+.then(data => {
     console.log(data);
+    let nameValue = data['name'];
+    let tempValue = data['main']['temp'];
+    let descValue = data['weather'][0]['description'];
 
-    var icon = "http://openweathermap.org/img/w/" + data.current.weather[0].icon + ".png";
-    var temp = Math.floor(data.current.temp);
-    var weather = data.current.weather[0].main;
+    weewoo.innerHTML = nameValue;
+    temp.innerHTML = tempValue;
+    desc.innerHTML = descValue;
 
-    $('.icon').attr('src', icon);
+    function setStorage() {
+        localStorage.setItem('nameofcity', nameValue);
+    }
+    setStorage()
 
-    $('.weather').append(weather);
+    function getValue() {
+        return localStorage.getItem('nameofcity');
+    }
+    console.log(getValue());
 
-    $('.temp').append(temp);
-});
+    function myFunction() {
+        document.getElementById("demo").innerHTML = 'hiiiii'
+    }
+    myFunction();
+})
 
-// https://openweathermap.org/data/2.5/weather?q=Lehi&units=imperial&appid=3bba06bcab2a36ab90dba65ed716c223
+    
+
+})
