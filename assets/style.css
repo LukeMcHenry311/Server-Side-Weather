@@ -59,11 +59,31 @@ input[type="submit"] {
     margin-right: 50px;
 }
 
-.flex-container-two {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 .card {
     text-align: center;
+}
+
+#date {
+    font-size: 20px;
+}
+
+.card-img-top {
+    height: 75px;
+    width: 50px;
+}
+
+.icon-container {
+    margin-bottom: 50px;
+}
+
+.yellow {
+    margin-bottom: 30px;
+}
+
+#date {
+    font-size: 15px;
+}
+
+.col-12 {
+    margin-bottom: -30px;
 }
