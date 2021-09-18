@@ -18,6 +18,16 @@ const d = new Date();
 document.getElementById("date").innerHTML = d;
 
 button.addEventListener('click', function() {
+
+    console.log("hiiiiiiii");
+
+    var element = document.getElementById("demo");
+    element.classList.remove("hide");
+
+    var element = document.getElementById("fakeid");
+    element.classList.remove("hide");
+
+
     fetch("https://api.openweathermap.org/data/2.5/weather?q=" +inputValue.value+ "&appid=3bba06bcab2a36ab90dba65ed716c223")
 .then(response => response.json())
 .then(data => {
@@ -31,10 +41,8 @@ button.addEventListener('click', function() {
     .then (response => response.json())
     .then (data => {
         console.log(data);
-
         
-    $(iconcontainer).html("");
-    
+    $(iconcontainer).html(""); 
     $(forecast).html("");
 
 
@@ -70,7 +78,7 @@ button.addEventListener('click', function() {
         var humidity5 = data.daily[4].humidity;
         var icon5 = "https://openweathermap.org/img/w/" + data.daily[4].weather[0].icon + ".png"
 
-        $(`<div class="card column">Day 1
+        $(`<div class="card gold">Day 1
             <div class="card-header">
             <div class="card-title"><img class="card-img-top" src="${icon1}" alt=""></div>
             </div>
@@ -84,7 +92,7 @@ button.addEventListener('click', function() {
             </div>
         `).appendTo(forecast);
 
-        $(`<div class="card column">Day 2
+        $(`<div class="card gold">Day 2
             <div class="card-header">
             <div class="card-title"><img class="card-img-top" src="${icon2}" alt=""></div>
             </div>
@@ -98,7 +106,7 @@ button.addEventListener('click', function() {
             </div>
         `).appendTo(forecast);
 
-        $(`<div class="card column">Day 3
+        $(`<div class="card gold">Day 3
             <div class="card-header">
             <div class="card-title"><img class="card-img-top" src="${icon3}" alt=""></div>
             </div>
@@ -112,7 +120,7 @@ button.addEventListener('click', function() {
             </div>
         `).appendTo(forecast);
 
-        $(`<div class="card column">Day 4
+        $(`<div class="card gold">Day 4
             <div class="card-header">
             <div class="card-title"><img class="card-img-top" src="${icon4}" alt=""></div>
             </div>
@@ -126,7 +134,7 @@ button.addEventListener('click', function() {
             </div>
         `).appendTo(forecast);
 
-        $(`<div class="card column">Day 5
+        $(`<div class="card gold">Day 5
             <div class="card-header">
             <div class="card-title"><img class="card-img-top" src="${icon5}" alt=""></div>
             </div>
@@ -185,4 +193,3 @@ button.addEventListener('click', function() {
     myFunction();
 });
 });
-

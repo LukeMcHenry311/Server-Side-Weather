@@ -1,6 +1,10 @@
 body {
-    background-color: hotpink;
-    font-family: 'Cyber', sans-serif;
+    background: url(../world-map-jpg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif
 }
 
 *{
@@ -17,8 +21,8 @@ body {
 input[type="text"] {
     height: 50px;
     width: 600px;
-    background: #e7e7e7;
-    font-family: "cyber", sans-serif;
+    background: lightgoldenrodyellow;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 20px;
     border: none;
@@ -29,8 +33,8 @@ input[type="text"] {
 input[type="submit"] {
     height: 50px;
     width: 100px;
-    background: #e7e7e7;
-    font-family: "cyber", sans-serif;
+    background: lightgoldenrodyellow;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 20px;
     border: none;
@@ -39,18 +43,20 @@ input[type="submit"] {
 
 .display-city {
     text-align: center;
-    background: white;
+    background: lightgoldenrodyellow;
     height: 200px;
     width: 750px;
     margin-bottom: 75px;
     margin-right: 20vw;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .recent-search {
-    background: white;
+    background: lightgoldenrodyellow;
     height: 200px;
     width: 300px;
     margin-left: 22vw;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .flex-container {
@@ -60,11 +66,8 @@ input[type="submit"] {
 }
 
 .card {
+    margin-right: 15px;
     text-align: center;
-    width: 350px;
-    height: 240px;
-    margin-left: 42vw;
-    margin-bottom: 38px;
 }
 
 #date {
@@ -96,4 +99,13 @@ input[type="submit"] {
     height: 50px;
     width: 50px;
     text-align: center;
+}
+
+.gold {
+    background-color: lightgoldenrodyellow;
+}
+
+.hide {
+    display: none;
+    visibility: none;
 }
