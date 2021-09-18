@@ -61,9 +61,10 @@ input[type="submit"] {
 
 .card {
     text-align: center;
-    width: 338px;
-    height: 230px;
+    width: 350px;
+    height: 240px;
     margin-left: 42vw;
+    margin-bottom: 38px;
 }
 
 #date {
