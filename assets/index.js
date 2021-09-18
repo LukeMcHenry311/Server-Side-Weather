@@ -32,24 +32,111 @@ button.addEventListener('click', function() {
     .then (response => response.json())
     .then (data => {
         console.log(data);
-        var temp1 = data.daily[0].temp.day;
+
+
+
 
         var iconMain = "https://openweathermap.org/img/w/" + data.current.weather[0].icon + ".png"
-                        $(`<img src="${iconMain}" alt="">`).appendTo(iconcontainer);
+            $(`<img src="${iconMain}" alt="">`).appendTo(iconcontainer);
 
+
+
+
+        var temp1 = data.daily[0].temp.day;
+        var wind1 = data.daily[0].wind_speed
+        var humidity1 = data.daily[0].humidity
         var icon1 = "https://openweathermap.org/img/w/" + data.daily[0].weather[0].icon + ".png"
-        console.log(temp1);
-        $(`<div class="card">
-        <div class="card-header">
-        </div>
-        <div class="card-body">
-            <ul class="list-group">
-                <li class="list-group-item">Temp: ${temp1} °F</li>
-                <h3 class="card-title"><img class="card-img-top" src="${icon1}" alt=""></h3>
-            </ul>
-        </div>
-        </div>
-`).appendTo(forecast);
+
+        var temp2 = data.daily[1].temp.day;
+        var wind2 = data.daily[1].wind_speed
+        var humidity2 = data.daily[1].humidity
+        var icon2 = "https://openweathermap.org/img/w/" + data.daily[1].weather[0].icon + ".png"
+
+        var temp3 = data.daily[2].temp.day;
+        var wind3 = data.daily[2].wind_speed;
+        var humidity3 = data.daily[2].humidity
+        var icon3 = "https://openweathermap.org/img/w/" + data.daily[2].weather[0].icon + ".png"
+
+        var temp4 = data.daily[3].temp.day;
+        var wind4 = data.daily[3].wind_speed;
+        var humidity4 = data.daily[3].humidity;
+        var icon4 = "https://openweathermap.org/img/w/" + data.daily[3].weather[0].icon + ".png"
+
+        var temp5 = data.daily[4].temp.day;
+        var wind5 = data.daily[4].wind_speed;
+        var humidity5 = data.daily[4].humidity;
+        var icon5 = "https://openweathermap.org/img/w/" + data.daily[4].weather[0].icon + ".png"
+
+        $(`<div class="card column">
+            <div class="card-header">
+            <h3 class="card-title"><img class="card-img-top" src="${icon1}" alt=""></h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Temp: ${temp1} °F</li>
+                    <li class="list-group-item">Wind: ${wind1} MPH</li>
+                    <li class="list-group-item">Humidity: ${humidity1} %</li>
+                </ul>
+            </div>
+            </div>
+        `).appendTo(forecast);
+
+        $(`<div class="card column">
+            <div class="card-header">
+            <h3 class="card-title"><img class="card-img-top" src="${icon2}" alt=""></h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Temp: ${temp2} °F</li>
+                    <li class="list-group-item">Wind: ${wind2} MPH</li>
+                    <li class="list-group-item">Humidity: ${humidity2} %</li>
+                </ul>
+            </div>
+            </div>
+        `).appendTo(forecast);
+
+        $(`<div class="card column">
+            <div class="card-header">
+            <h3 class="card-title"><img class="card-img-top" src="${icon3}" alt=""></h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Temp: ${temp3} °F</li>
+                    <li class="list-group-item">Wind: ${wind3} MPH</li>
+                    <li class="list-group-item">Humidity: ${humidity3} %</li>
+                </ul>
+            </div>
+            </div>
+        `).appendTo(forecast);
+
+        $(`<div class="card column">
+            <div class="card-header">
+            <h3 class="card-title"><img class="card-img-top" src="${icon4}" alt=""></h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Temp: ${temp4} °F</li>
+                    <li class="list-group-item">Wind: ${wind4} MPH</li>
+                    <li class="list-group-item">Humidity: ${humidity4} %</li>
+                </ul>
+            </div>
+            </div>
+        `).appendTo(forecast);
+
+        $(`<div class="card column">
+            <div class="card-header">
+            <h3 class="card-title"><img class="card-img-top" src="${icon5}" alt=""></h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item">Temp: ${temp5} °F</li>
+                    <li class="list-group-item">Wind: ${wind5} MPH</li>
+                    <li class="list-group-item">Humidity: ${humidity5} %</li>
+                </ul>
+            </div>
+            </div>
+        `).appendTo(forecast);
+
     })
 
     let nameValue = data['name'];

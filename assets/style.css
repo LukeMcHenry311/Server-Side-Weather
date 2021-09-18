@@ -43,14 +43,14 @@ input[type="submit"] {
     height: 200px;
     width: 750px;
     margin-bottom: 75px;
-    border-color:blue;
+    margin-right: 20vw;
 }
 
 .recent-search {
     background: white;
     height: 200px;
     width: 300px;
-    margin-left: 50px;
+    margin-left: 22vw;
 }
 
 .flex-container {
@@ -61,6 +61,9 @@ input[type="submit"] {
 
 .card {
     text-align: center;
+    width: 338px;
+    height: 230px;
+    margin-left: 42vw;
 }
 
 #date {
@@ -86,4 +89,10 @@ input[type="submit"] {
 
 .col-12 {
     margin-bottom: -30px;
+}
+
+.card-title {
+    height: 50px;
+    width: 50px;
+    text-align: center;
 }
