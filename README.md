@@ -9,7 +9,7 @@
 * [Collaborations](#collaborations)
 
 ## Screenshot
-![Screenshot 2021-09-17 233750](https://user-images.githubusercontent.com/82482629/133875268-c5848c64-acc6-4a11-981b-7639bf570213.png)
+![Screenshot](https://user-images.githubusercontent.com/82482629/133911378-0b619a8f-3ed0-4d04-aff4-396956a9d64f.png)
 ## Description
 Weather Dashboard to help you search for current weather and upcoming forecasts in any cities.
 ## Technologies
